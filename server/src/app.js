@@ -16,8 +16,6 @@ const io = new socketServer(server, {
 	},
 })
 
-//Refactorizar codigo para tener las rooms en el servidor y solicitarlos en el cliente
-
 //Sockets
 io.on('connection', (socket) => {
 	console.log(`User ${socket.id} connected`)
